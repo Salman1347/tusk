@@ -1,0 +1,43 @@
+package Collections;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Sett {
+
+	public static void main(String[] args) {
+		//stores unique elements and doesnt preswerves insertion order
+
+		Set<String> companies = new HashSet<String>();
+		
+		//stores unique elements and also preswerves insertion order
+		Set<String> brands = new LinkedHashSet<String>();
+		
+		brands.add("puma");
+		brands.add("adidas");
+		
+		brands.add("gucci");
+		
+		brands.add("nike");
+		
+		brands.add("nike");
+		System.out.println(brands);
+		
+		//allow unique elements and sort the elements either in asc or ndesc
+		
+		Set<Integer> numbers = new TreeSet<Integer>();
+		
+		numbers.add(2);
+		numbers.add(5);
+		numbers.add(7);
+		numbers.add(1);
+		
+		System.out.println(numbers);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package StringImmExample;
+
+import java.util.Arrays;
+
+public class Arraydemo {
+
+	public static void main(String[] args) {
+		
+		int numbers[] = new int[5];
+		
+		String users[] = new String[5];
+		
+		boolean status[] = new boolean[2];
+		
+		numbers[0]= 21;
+		numbers[1]= 23;
+		numbers[2]= 24;
+		numbers[3]= 25;
+		numbers[4]= 26;
+		
+		System.out.println(Arrays.toString(numbers));
+		
+		users[0]="salman";
+		users[0]="syed";
+		users[0]="abdul";
+		users[0]="niyamath";
+		users[0]="nawaz";
+		
+		System.out.println(Arrays.toString(users));
+	}
+
+}

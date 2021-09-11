@@ -1,0 +1,30 @@
+package StringImmExample;
+
+public class Employee {
+
+	public int id;
+	public String name;
+	public String Deaprt;
+	public double salary;
+	
+	
+	public Employee(int id, String name, String deaprt, double salary) {
+		
+		this.id = id;
+		this.name = name;
+		this.Deaprt = deaprt;
+		this.salary = salary;
+	}
+	
+	public Employee() {
+		super();
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", Deaprt=" + Deaprt + ", salary=" + salary + "]";
+	}
+	
+	
+
+}

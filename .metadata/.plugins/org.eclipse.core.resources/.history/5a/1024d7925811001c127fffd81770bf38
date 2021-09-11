@@ -1,0 +1,25 @@
+package StringImmExample;
+
+import java.util.LinkedList;
+
+public final class Linkedlisat {
+
+	public static void main(String[] args) {
+		LinkedList<String> companies = new LinkedList<String>();
+		
+		companies.add("Comviva");
+		companies.add("Techm");
+		companies.add("HP");
+		companies.add("Athena");
+		companies.add("Tcs");
+		
+		for(String com:companies) {
+			
+			System.out.println(com);
+			
+		}
+		//find companies
+
+	}
+
+}

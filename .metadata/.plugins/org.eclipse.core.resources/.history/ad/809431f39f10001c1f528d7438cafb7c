@@ -1,0 +1,62 @@
+package StringImmExample;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Stack;
+import java.util.Vector;
+
+public class Collectionlist {
+
+	public static void main(String[] args) {
+		
+		//list --> order collection of data with duplicates values,
+		
+		//list(interface) -> impo classes-> 
+		
+		List<String> list = new ArrayList<String>();   //backed by dynamic array,,not thread safe,  read operations
+		
+		List<String> list1 = new LinkedList<String>(); //backed by doubly linked list, store the date in form of node,not thread safe,,utilised when we have inssert delete and update operations
+		
+		List<String> list2 = new Vector<String>();   //old legacy collection,thread safe,
+		
+		List<String> list3 = new Stack<String>();  //old legacy collection,thread safe
+		
+		
+		list.add("salman");
+		list.add("syed");
+		list.add("sal");
+		list.add("sallu");
+		list.add("sal");
+		list.add("sal");
+		
+		System.out.println(list);
+		
+		//display the data of specific indx
+		System.out.println("The element at index 2 " +list.get(2));
+		
+		//add data at specific index
+		
+		list.add(2,"bob");
+		
+		System.out.println(list);
+		
+		
+		//iterate
+		
+		for(int i=0; i<list.size();i++) {
+			
+			System.out.print(list.get(i));
+		}
+		
+		System.out.println();
+		
+		for(String arr: list) {
+			
+			System.out.print(arr);
+		}
+		
+
+	}
+
+}

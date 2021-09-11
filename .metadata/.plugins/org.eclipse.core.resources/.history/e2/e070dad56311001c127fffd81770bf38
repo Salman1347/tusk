@@ -1,0 +1,27 @@
+package Collections;
+
+import java.util.ArrayDeque;
+import java.util.Queue;
+
+public class QueueDemo {
+
+	public static void main(String[] args) {
+		Queue<String> people = new ArrayDeque<String>();
+		
+		people.add("john");
+		people.add("salman");
+		people.add("syed");
+		people.add("dod");
+		people.add("bob");
+		people.offer("bob");
+		
+		System.out.println(people.peek());
+		System.out.println(people.element());
+		System.out.println(people.poll());
+		System.out.println(people);
+		
+		
+
+	}
+
+}

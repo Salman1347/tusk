@@ -1,0 +1,18 @@
+package StringImmExample;
+
+public class StringbuilderDemo {
+
+	public static void main(String[] args) {
+		StringBuilder message = new StringBuilder("helllo");
+		
+		System.out.println(message);
+		
+		message.append("  how are you");
+		System.out.println(message);
+		
+		//replace
+		message.replace(0, 6, "hi");
+		System.out.println(message);
+	}
+
+}

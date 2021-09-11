@@ -1,0 +1,28 @@
+package Collections;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class Sett {
+
+	public static void main(String[] args) {
+		
+		Set<String> companies = new HashSet<String>();
+		Set<String> brands = new LinkedHashSet<String>();
+		
+		brands.add("puma");
+		brands.add("adidas");
+		
+		brands.add("gucci");
+		
+		brands.add("nike");
+		
+		brands.add("nike");
+		System.out.println(brands);
+		
+		
+
+	}
+
+}

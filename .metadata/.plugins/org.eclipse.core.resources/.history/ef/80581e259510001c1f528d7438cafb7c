@@ -1,0 +1,31 @@
+package StringImmExample;
+
+public class InnerClas {
+	
+	private double amount = 3000;
+	private String username="salman";
+	
+	//inner class
+	class InnerTest{
+		
+		private String message="Hello Everyone";
+		
+		public void showData() {
+			
+			System.out.println("Outer class data" +amount +username);
+			System.out.println("inner class data" +message);
+		}
+		
+	}
+	
+	
+	
+
+	public static void main(String[] args) {
+		InnerClas ob = new InnerClas();
+		InnerTest inner = ob.new InnerTest();
+		
+		inner.showData();
+	}
+
+}

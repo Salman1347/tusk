@@ -1,0 +1,29 @@
+package StringImmExample;
+
+import java.util.Stack;
+import java.util.Vector;
+
+public class VectorDemo {
+
+	public static void main(String[] args) {
+		
+		Vector<Double> prices = new Vector<Double>();
+		
+		prices.add(100.001);
+		prices.add(100.020);
+		prices.add(100.030);
+		prices.add(100.040);
+		
+		prices.add(100.050);
+		
+		Stack<String> listofbooks = new Stack<String>();
+		
+		listofbooks.push("yoo");
+		listofbooks.push("o");
+		listofbooks.push("yo00o");
+		listofbooks.push("yo00000o");
+		
+		System.out.println(listofbooks);
+	}
+
+}

@@ -1,0 +1,28 @@
+package StringImmExample;
+
+public class StringbufferDemo {
+
+	public static void main(String[] args) {
+		
+		StringBuffer message = new StringBuffer("Today is a good day");
+		System.out.println(message);
+		
+		//update the string
+		
+		message.append(" Happy learning");
+		
+		System.out.println(message);
+		
+		//replace text
+		
+		message.replace(0, 5, "yesterday");
+		
+		System.out.println(message);
+		
+		//delete
+		
+		message.delete(0, 5)
+
+	}
+
+}

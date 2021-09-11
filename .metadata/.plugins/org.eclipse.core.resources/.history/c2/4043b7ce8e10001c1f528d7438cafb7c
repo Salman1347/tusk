@@ -1,0 +1,50 @@
+package StringImmExample;
+
+public class BankOperation {
+	
+	static String username[] = {"salman","syed","waheed"};
+	static int userids[]= {101,102,103};
+	static double balances[] = {10000,20000,30000};
+
+	public static void main(String[] args) {
+			int userid=103;
+			
+			finduser(userid);
+		
+		//find user
+		//show balance
+		//withdraw
+		//deposit
+		
+		
+
+	}
+
+	private static void finduser(int userid2) {
+		
+		int match=0;
+		for(int i=0; i<userids.length;i++) {
+			
+			if(userids[i]==userid2) {
+				
+				System.out.println("user is found" +userid2);
+				System.out.println("name is " +username[i]);
+				System.out.println("balabce is" +balances[i]);
+				match++;
+				
+				
+			}
+			
+			
+			
+		}
+		
+		if(match==0) {
+			
+			System.out.println("not found");
+		}
+		
+		
+	}
+
+}

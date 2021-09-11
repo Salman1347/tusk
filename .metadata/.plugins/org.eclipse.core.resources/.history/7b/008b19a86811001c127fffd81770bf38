@@ -1,0 +1,25 @@
+package Collections;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapDemo {
+
+	public static void main(String[] args) {
+		Map<String, Integer> Numbers = new HashMap<String, Integer>();
+		
+		Numbers.put("salman", 9611);
+		Numbers.put("syed", 9612);
+		Numbers.put("niyamath", 9613);
+		Numbers.put("patel", 9614);
+		
+		System.out.println(Numbers);
+		System.out.println(Numbers.get("salman"));
+		
+		for(String key:Numbers.keySet()) {
+			
+			System.out.println(key);
+		}
+	}
+
+}

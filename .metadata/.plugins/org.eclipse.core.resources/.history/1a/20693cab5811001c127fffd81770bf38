@@ -1,0 +1,37 @@
+package StringImmExample;
+
+import java.util.ArrayList;
+
+public class AllTypeOFList {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> ListOfCities = new ArrayList<>();
+		ListOfCities.add("Bangalore");
+		
+		ListOfCities.add("Lucknow");
+		ListOfCities.add("Hyderabad");
+		ListOfCities.add("Rajasthan");
+		ListOfCities.add("Mysore");
+		
+		System.out.println(ListOfCities.get(2));
+		
+		//search a city
+		
+		findCity(ListOfCities,"Bangalore");
+		
+
+	}
+	
+	private static void findCity(ArrayList<String> ListOfCities, String cityName) {
+		int match=0;
+		
+		for(String arr:ListOfCities) {
+			
+			if(arr.equals(cityName)) {
+				System.out.println("found");
+			}
+		}
+	}
+
+}
